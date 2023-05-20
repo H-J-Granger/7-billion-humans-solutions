@@ -1,0 +1,13 @@
+pickup s
+a:
+if e == worker and
+ s == datacube or
+ w == worker:
+	step e
+endif
+step s
+if w != datacube or
+ c != nothing:
+	jump a
+endif
+drop
